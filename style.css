@@ -39,6 +39,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+#overview_content{
+    font-size: 22px;
+    margin-bottom: 76px;
+}
+#overview_head{
+    font-size: 45px;
+    font-family: inherit;
+    font-weight: 700;
+}
 body{
     background: #fcfcfc;
     font-family: sans-serif;
