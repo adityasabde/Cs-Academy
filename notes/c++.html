@@ -19,19 +19,18 @@
     <link rel="stylesheet" href="html.css" />
 
     <style>
-      .iframe-container{
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25;
-        height: 600px;
-      }
-      iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+      .yt{
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 0px;
+    height: 185px; 
+    overflow: hidden;
+}
+.yt iframe{
+    position: absolute;
+     top: 0;
+    left: 0; width: 100%; height: 100%;
+}
     </style>
   </head>
   <body>
@@ -79,16 +78,20 @@
     </nav>
 
     <!-- youtube video section -->
+<!-- youtube videos -->
 <br><br>
-    <div class="container">
-      <center><h2>Watch PlayList of C++</h2></center>
-      <div class="iframe-container">
-        <iframe  src="https://www.youtube.com/embed/videoseries?list=PLFkRAyYUNOYC1gxcqwGJnthuPbVJ_S9FV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
+<center><h2>Watch one shot of Data Structure Theory</h2></center>
+<div class="container" >
+  <div class="ratio ratio-16x9 yt" >
+  
+    <iframe  src="https://www.youtube.com/embed/videoseries?list=PLFkRAyYUNOYC1gxcqwGJnthuPbVJ_S9FV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  
+   </div>
 
-    <br />
-    <br />
+<br />
+<br />
+
 
     <!-- middle portion -->
     <section class="container middle">
@@ -104,7 +107,7 @@
       </h2>
       <img
         src="../img/c++img1.jpeg"
-        class="rounded mx-auto"
+        class="rounded img-fluid mx-auto"
         alt="img"
         width="422"
         height="auto"
@@ -308,7 +311,7 @@
           border="0"
           data-original-height="342"
           data-original-width="445"
-          src="../img/img1.jpeg"
+          src="../img/c++img1.jpeg"
           width="320"
         />
       </div>
@@ -379,7 +382,7 @@
           border="0"
           data-original-height="290"
           data-original-width="485"
-          src="../img/img2.jpeg"
+          src="../img/c++notes.jpeg"
           width="320"
         />
       </div>
@@ -449,7 +452,7 @@
           border="0"
           data-original-height="283"
           data-original-width="414"
-          src="../img/img2.jpeg"
+          src="../img/notes.jpeg"
           width="320"
         />
       </div>

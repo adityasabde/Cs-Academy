@@ -11,19 +11,18 @@
     <title>html pyq</title>
     <link rel="stylesheet" href="htmlpyq.css">
     <style>
-      .iframe-container{
-        position: relative;
-        width: 100%;
-        padding-bottom: 56.25;
-        height: 600px;
-      }
-      iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
+     .yt{
+    position: relative;
+    padding-bottom: 56.25%; 
+    padding-top: 0px;
+    height: 185px; 
+    overflow: hidden;
+}
+.yt iframe{
+    position: absolute;
+     top: 0;
+    left: 0; width: 100%; height: 100%;
+}
     </style>
 </head>
 <body>
@@ -64,7 +63,7 @@
 <h2>HTML Past Year Questions</h2>
 
 <div class="img">
-    <img src="../img/question.jpeg" alt="image">
+    <img class="img-fluid" src="../img/question.jpeg" alt="image">
 </div>
   <div class="middle">
      <img src="../img/htmlpyqimg1.jpeg" alt="html">
@@ -76,15 +75,20 @@
 <h3>Keep Study with us...........</h3>
 <br>
 
- <!-- youtube video section -->
+
+<!-- youtube video section -->
 <br><br>
-<div class="container">
-  <center><h2>Watch Solution</h2></center>
-  <div class="iframe-container">
+<center><h2>Watch Solution</h2></center>
+<div class="container" >
+  <div class="ratio ratio-16x9 yt" >
+  
     <iframe src="https://www.youtube.com/embed/iyJ64X7r8Yk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
-</div>
-<br><br>
+  
+   </div>
+
+<br />
+<br />
 
 
 <!-- footer part -->
