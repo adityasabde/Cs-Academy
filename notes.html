@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222158248-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-222158248-1');
+</script>
+<link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,10 +33,192 @@
     />
     <title>Notes</title>
     <link rel="stylesheet" href="notes.css" />
+    <style>
+      .but{
+        left: 100px;
+        margin-left: 25%;
+      }
+      .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  border-radius: 20px;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  border-radius: 20px;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  border-radius: 20px;
+}
+
+.fa-instagram {
+  background: #fb3958;
+  color: white;
+  border-radius: 20px;
+}
+    </style>
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
   </head>
   <body>
+    
     <!-- nav bar section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Cs Academy</a>
         <button
@@ -51,65 +247,109 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
+    <header class="main-header clearfix1" role="header">
+      <div class="logo">
+        <a href="index.html"><em>CS</em> Academy</a>
+      </div>
+      <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+      <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+          <li><a href="index.html">Home</a></li>
+          
+          <li><a href="notes.html" class="external">Notes</a></li>
+          <!-- <li><a href="#section5">Video</a></li> -->
+          <li><a href="test.html" class="external">TEST SERIES</a></li>
+          <li><a href="#section6">Contact</a></li>
     
+          <li><a href="#section4">About Us</a>
+      </li>
+        </ul>
+      </nav>
+    </header>    
     <!-- middle portion -->
+    
+    <section class="section why-us" data-section="section2">
+  
     <div class="middle container">
-      <center><h2 class="my-4">Notes Section</h2></center>
+      <div class="section-heading">
+        <h2>NOTES</h2>
+      </div>
+      
       <div class="middlecards">
-        <div class="card my-3 mx-3" style="width: 18rem">
-          <img src="img/htmlnotes.jpeg" class="card-img-top" alt="img" />
+        <div class="card my-3 mx-3" style="width: 18rem; border-radius: 10px;">
+          <img src="img/htmlnotes.jpeg" class="card-img-top" alt="img" style="border-radius: 10px;"/>
           <div class="card-body">
             <h5 class="card-title">HTML Notes</h5>
             <p class="card-text">
               This section content past year MCQ of Computer Science
             </p>
-            <a href="notes/html.html" class="btn btn-primary">Let's Start</a>
+            <div class="but">
+              <div class="main-button">
+                <div><a href="notes/html.html">Mock Test</a></div>
+            </div>
+            </div>
+            
+            
           </div>
         </div>
         
-        <div class="card my-3 mx-3" style="width: 18rem">
-          <img src="img/osnotes.jpeg" class="card-img-top" alt="img" />
+        <div class="card my-3 mx-3" style="width: 18rem; border-radius: 10px;">
+          <img src="img/osnotes.jpeg" class="card-img-top" alt="img" style="border-radius: 30px;"/>
           <div class="card-body">
             <h5 class="card-title">Operating System</h5>
             <p class="card-text">
               This section content past year MCQ of Computer Science
             </p>
-            <a href="notes/os.html" class="btn btn-primary">Let's Start</a>
+            <div class="but">
+              <div class="main-button">
+                <div><a href="notes/os.html">Mock Test</a></div>
+            </div>
+            </div>
+            
           </div>
         </div>
 
-        <div class="card my-3 mx-3" style="width: 18rem">
-          <img src="img/dsanotes.jpeg" class="card-img-top" alt="img" />
+        <div class="card my-3 mx-3" style="width: 18rem; border-radius: 10px;">
+          <img src="img/dsanotes.jpeg" class="card-img-top" alt="img" style="border-radius: 10px;"/>
           <div class="card-body">
             <h5 class="card-title">Data Structures Notes</h5>
             <p class="card-text">
               This section content past year MCQ of Computer Science
             </p>
-            <a href="notes/datastructure.html" class="btn btn-primary">Let's Start</a>
+            <div class="but">
+              <div class="main-button">
+                <div><a href="notes/datastructure.html">Mock Test</a></div>
+            </div>
+            </div>
+           
           </div>
         </div>
 
 
-        <div class="card my-3 mx-3" style="width: 18rem">
+        <!-- <div class="card my-3 mx-3" style="width: 18rem; border-radius: 10px;">
           <img src="img/c++notes.jpeg" class="card-img-top" alt="img" />
           <div class="card-body">
             <h5 class="card-title">C++ Notes</h5>
             <p class="card-text">
               This section content past year MCQ of Computer Science
             </p>
-            <a href="notes/c++.html" class="btn btn-primary">Let's Start</a>
+            <div class="main-button">
+              <div><a href="notes/c++.html">Mock Test</a></div>
+          </div>
           </div>
         </div>
 
-        <div class="card my-3 mx-3" style="width: 18rem">
+        <div class="card my-3 mx-3" style="width: 18rem; border-radius: 10px;">
           <img src="img/networknotes.jpeg" class="card-img-top" alt="img" />
           <div class="card-body">
             <h5 class="card-title">Networking Technologys Notes</h5>
             <p class="card-text">
               This section content past year MCQ of Computer Science
             </p>
-            <a href="notes/network.html" class="btn btn-primary">Let's Start</a>
+            <div class="main-button">
+              <div><a href="notes/network.html">Mock Test</a></div>
+          </div>
           </div>
         </div>
 
@@ -120,7 +360,9 @@
             <p class="card-text">
               This section content past year MCQ of Computer Science
             </p>
-            <a href="notes/microcontroller.html" class="btn btn-primary">Let's Start</a>
+            <div class="main-button">
+              <div><a href="notes/microcontroller.html">Mock Test</a></div>
+          </div>
           </div>
         </div>
 
@@ -184,35 +426,74 @@
             </p>
             <a href="notes/mathpart2pdf.html" class="btn btn-primary">Let's Start</a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
-
+  </section>
     <!-- footer part -->
-    <footer>
-      <div class="footer-content my-4">
-          <h3>Cs Academy</h3>
-          <p>Cs Academy is a educational website for students . In this student can learn computer science syllabus very efficiently with notes and past year questions.
+    <section class="section why-us" data-section="section6">
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About Us</h6>
+            <p> One stop solution for all MHT-CET aspirints.<br><em>Padhai Skool</em> is a educational website for students .<br> We Provide best notes and real time exam experience in our Exam section.
               hope you will like this website.
               All best for your bright future.
-          </p>
-          <ul class="socials">
-              <li><a href="https://twitter.com/aditya_sabde"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UCOpFnh41ZHE-ah4iHSoAp7g"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/aditya-sabde-12b68120b/"><i class="fa fa-linkedin-square"></i></a></li>
-          </ul>
+              </p>
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <!-- <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul> -->
+          </div>
+  
+          <div class="col-xs-6 col-md-3">
+            <h6>Contact US</h6>
+            <ul class="footer-links">
+              <li><a>7498215471</a></li>
+              <li>padhaiskool@gmail.com</li>
+              <li>Pune, Maharashtra</li>
+              <!-- <li><a>Privacy Policy</a></li>
+              <li><a>Sitemap</a></li> -->
+              <a href="#" class="fa fa-youtube"></a><a href="#" class="fa fa-linkedin"></a><a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            </ul>
+          </div>
+        </div>
+        <hr>
       </div>
-      <div class="footer-bottom">
-          <p>copyright &copy; <a href="#">Aditya Sabde 2022</a> 
-          </p>
-                  
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+         <a href="#">Padhai Skool</a>.
+            </p>
+          </div>
+  
+          
+        </div>
       </div>
-
   </footer>
+</section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
 </html>

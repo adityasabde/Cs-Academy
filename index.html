@@ -26,13 +26,51 @@
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <title>Cs Academy</title>
+    <title>Padhai Skool</title>
     <link rel="stylesheet" href="style.css" />
     <style></style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Grad School HTML5 Template</title>
+    
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <style>
+      .news{
+        background-color: rgb(218, 227, 235);
+        height: 350px;
+        opacity: 75%;
+      }
+      .img{
+        width: 90px;
+      }
+      .scroll{
+        /* margin-top: 80px; */
+        /* padding: 10px;
+        padding-top: 90px;
+        padding-bottom: 10px; */
+        /* background-color: rgb(10, 3, 90); */
+        color: rgb(255, 255, 255);
+        font-size: 21px;
+        font-weight: 700;
+        opacity: 100%;
+      }
+      
+    </style>
   </head>
   <body>
     <!-- nav bar section -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Cs Academy</a>
         <button
@@ -69,82 +107,420 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
+ <!--header-->
+ <header class="main-header clearfix" role="header">
+  <div class="logo">
+    <a href="index.html"><em>Padhai</em> Skool</a>
+  </div>
+  <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+  <nav id="menu" class="main-nav" role="navigation">
+    <ul class="main-menu">
+      <li><a href="index.html">Home</a></li>
+      
+      <li><a href="notes.html" class="external">Notes</a></li>
+      <!-- <li><a href="#section5">Video</a></li> -->
+      <li><a href="test.html" class="external">TEST SERIES</a></li>
+      <li><a href="#section6">Contact</a></li>
+
+      <li><a href="#section4">About Us</a>
+        <!-- <ul class="sub-menu">
+          <li><a href="#section2">Who we are?</a></li>
+          <li><a href="#section3">What we do?</a></li>
+          <li><a href="#section3">How it works?</a></li>
+          <li><a href="https://templatemo.com/about" rel="sponsored" class="external">External URL</a></li>
+        </ul> -->
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ***** Main Banner Area Start ***** -->
+<section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+        <source src="assets/images/course-video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+        <div class="caption">
+            <h6>Platform for all MHT-CET Aspirints</h6>
+            <h2><em>Your</em> Classroom</h2>
+            <div class="main-button">
+                <div class="scroll-to-section"><a href="#section2">Discover more</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ***** Main Banner Area End ***** -->
+
+<!-- <section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <div class="features-post">
+          <div class="features-content">
+            <div class="content-show">
+              <h4><i class="fa fa-pencil"></i>All Courses</h4>
+            </div>
+            <div class="content-hide">
+              <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+              <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+              <div class="scroll-to-section"><a href="#section2">More Info.</a></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="features-post second-features">
+          <div class="features-content">
+            <div class="content-show">
+              <h4><i class="fa fa-graduation-cap"></i>Virtual Class</h4>
+            </div>
+            <div class="content-hide">
+              <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+              <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+              <div class="scroll-to-section"><a href="#section3">Details</a></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12">
+        <div class="features-post third-features">
+          <div class="features-content">
+            <div class="content-show">
+              <h4><i class="fa fa-book"></i>Real Meeting</h4>
+            </div>
+            <div class="content-hide">
+              <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet. Donec maximus elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
+              <p class="hidden-sm">Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere imperdiet.</p>
+              <div class="scroll-to-section"><a href="#section4">Read More</a></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<section class="section why-us" data-section="section2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Our Services</h2>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div id='tabs'>
+          <ul>
+            <li><a href='#tab1'>Best Education</a></li>
+            <li><a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+            <li><a href='#tab2'>Quality Notes</a></li>
+          </ul>
+          <section class='tabs-content'>
+            <!-- <article id='tabs-1'> -->
+              <section class="tab1">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="img/mocktest.jpeg" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Free Mock Tests for everyone</h4>
+                    <p>This Section presents mock test , you can start mock test on this section for practice</p>
+                    <div class="main-button">
+                      <div><a href="test.html">Mock Test</a></div>
+                  </div>
+                  </div>
+                </div>
+              </section>
+              
+            <!-- </article> -->
+            <!-- <article id='tabs-2'>
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="assets/images/choose-us-image-02.png" alt="">
+                </div>
+                <div class="col-md-6">
+                  <h4>Top Level</h4>
+                  <p>You can modify this HTML layout by editing contents and adding more pages as you needed. Since this template has options to add dropdown menus, you can put many HTML pages.</p> 
+                  <p>Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                </div>
+              </div>
+            </article> -->
+            <!-- <article id='tabs-3'> -->
+              <section class="tab2"></section>
+              <div class="row">
+                <div class="col-md-6">
+                  <h4>Best Quality Notes Available</h4>
+                  <p>This Section contains Important notes of Computer Science</p>
+                  <div class="main-button">
+                    <div ><a href="notes.html">Notes</a></div>
+                    
+                </div>
+                  
+                </div>
+                <div class="col-md-6">
+                  <img src="img/notes.jpeg" alt="">
+                  </div>
+              </div>
+            </section>
+            <!-- </article> -->
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section coming-soon" data-section="section3">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-xs-12">
+        <div class="continer centerIt">
+          <div>
+            <h4>Time left for<em>MHT-CET 2022</em> is:</h4>
+            <div class="counter">
+
+              <div class="days">
+                <div class="value">00</div>
+                <span>Days</span>
+              </div>
+
+              <div class="hours">
+                <div class="value">00</div>
+                <span>Hours</span>
+              </div>
+
+              <div class="minutes">
+                <div class="value">00</div>
+                <span>Minutes</span>
+              </div>
+
+              <div class="seconds">
+                <div class="value">00</div>
+                <span>Seconds</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="right-content">
+          <div class="top-content">
+            <h6>News Updates! <em></em> </h6>
+          </div>
+          <div class="news">
+            <p></p>
+            <div class="scroll">
+              <marquee direction="up"
+                ><img src="img/new.png" alt="" class="img">Notice for Editing Facility for MHT-CET 2022 </marquee
+              >
+              <marquee direction="up"
+                ><img src="img/new.png" alt="" class="img">Re-Revised Tentative Schedule for All Common Entrance Tests A.Y. 2022-23</marquee
+              >
+              <a href="https://cetcell.mahacet.org/" style="padding-left: 10%;">click to->Visit Official Website!</a>
+            </div>
+          </div>
+          
+
+          <!-- <form id="contact" action="" method="get">
+            <div class="row">
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="email" type="text" class="form-control" id="email" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <input name="phone-number" type="text" class="form-control" id="phone-number" placeholder="Your Phone Number" required="">
+                </fieldset>
+              </div>
+              <div class="col-md-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="button">Get it now</button>
+                </fieldset>
+              </div>
+            </div>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <!-- body section welcome section  -->
-    <div class="middle ">
-      <!-- <h2 id="middlehead">Welcome to our Learning Platform</h2> -->
-      <img class="img-fluid" src="img/back.jpeg" alt="img">
-    </div>
-
-
-    <div class="container">
-      <center><h2 id="overview_head">Overview of Website</h2></center>
-      <br>
-      <p id="overview_content">This is Offical Website of Cs-Academy .This is special platform developed for students for their board preparation , MHT-CET exam preparation . We will update this website daily for give a quality content to student . We hope that you like this content and we believe that this website helps for student to easily access study material without any cost.  </p>
-    </div>
-    <!-- div of select card -->
-    <center><h2 class="my-4">Our Free Study Material</h2></center>
-    <div class="middlecards">
-      <div class="card my-3 mx-3" style="width: 18rem">
-        <img src="img/pyq.jpeg" class="card-img-top" alt="img" />
-        <div class="card-body">
-          <h5 class="card-title">Past Year MCQ</h5>
-          <p class="card-text">
-            This section content past year MCQ of Computer Science
-          </p>
-          <a href="pyq.html" class="btn btn-primary">Let's Start</a>
-        </div>
-      </div>
-
-      <div class="card my-3 mx-3" style="width: 18rem">
-        <img src="img/notes.jpeg" class="card-img-top" alt="img" />
-        <div class="card-body">
-          <h5 class="card-title">Notes</h5>
-          <p class="card-text">
-            This Section contains Important notes of Computer Science
-          </p>
-          <a href="notes.html" class="btn btn-primary">Let's Start</a>
-        </div>
-      </div>
-
-      <div class="card my-3 mx-3" style="width: 18rem">
-        <img src="img/mocktest.jpeg" class="card-img-top" alt="img" />
-        <div class="card-body">
-          <h5 class="card-title">MHT-CET Mock Test</h5>
-          <p class="card-text" >
-            This Section presents mock test , you can start mock test on this section for practice .
-          </p>
-          <a href="test.html" class="btn btn-primary">Let's Start</a>
-        </div>
-      </div>
-    </div>
+   
 
     <!-- footer part -->
-    <footer>
+    <section class="section why-us" data-section="section4">
+    <div style="background-color: #0b253a; color:white; text-align: center; height: fit-content; font-size: 80px; font-weight: bolder;">OUR TEAM!</div>
+    <div class="grid-container">
+      
+      <div>
+        <div class="card">
+          <img src="Ankur.jpg" alt="Avatar" style="width:100%">
+          <div>
+            <h4><b>Ankur Raut</b></h4> 
+            <p>Co-Founder</p> 
+            <a href="#" class="fa fa-youtube"></a><a href="#" class="fa fa-linkedin"></a><a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <img src="aditya.png" alt="Avatar" style="width:100%">
+          <div>
+            <h4><b>Aditya Sabde</b></h4> 
+            <p>Co-Founder</p> 
+            <a href="https://youtube.com/channel/UCOpFnh41ZHE-ah4iHSoAp7g" class="fa fa-youtube"></a><a href="https://www.linkedin.com/in/aditya-sabde-12b68120b/" class="fa fa-linkedin"></a><a href="https://instagram.com/cs_academy_with_as?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/aditya_sabde?t=aQvajHxt4aYkISjCoxQbZQ&s=09" class="fa fa-twitter"></a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!-- <footer>
       <div class="footer-content my-4">
-          <h3>Cs Academy</h3>
-          <p>Cs Academy is a educational website for students . In this student can learn computer science syllabus very efficiently with notes and past year questions.
+          <h3>Padhai Skool</h3>
+          <p>Padhai Skool is a educational website for students . One stop solution for all MHT-CET aspirints.<br> We Provide best notes and real time exam experience in our Exam section.
               hope you will like this website.
               All best for your bright future.
           </p>
-          <ul class="socials">
-              <li><a href="https://twitter.com/aditya_sabde"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.youtube.com/channel/UCOpFnh41ZHE-ah4iHSoAp7g"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/aditya-sabde-12b68120b/"><i class="fa fa-linkedin-square"></i></a></li>
-          </ul>
+          
       </div>
+      
       <div class="footer-bottom">
-          <p>copyright &copy; <a href="#">Aditya Sabde 2022</a> 
+
+          <p>copyright &copy; <a href="#">Padhai Skool</a> 
           </p>
                   
       </div>
 
-  </footer>
+  </footer> -->
+  <section class="section why-us" data-section="section6">
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About Us</h6>
+          <p> One stop solution for all MHT-CET aspirints.<br><em>Padhai Skool</em> is a educational website for students .<br> We Provide best notes and real time exam experience in our Exam section.
+            hope you will like this website.
+            All best for your bright future.
+            </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <!-- <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul> -->
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Contact US</h6>
+          <ul class="footer-links">
+            <li><a>7498215471</a></li>
+            <li>padhaiskool@gmail.com</li>
+            <li>Pune, Maharashtra</li>
+            <!-- <li><a>Privacy Policy</a></li>
+            <li><a>Sitemap</a></li> -->
+            <a href="#" class="fa fa-youtube"></a><a href="#" class="fa fa-linkedin"></a><a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+       <a href="#">Padhai Skool</a>.
+          </p>
+        </div>
+
+        
+      </div>
+    </div>
+</footer>
+</section>
+</section>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+          if($(e.target).hasClass('external')) {
+            return;
+          }
+          e.preventDefault();
+          $('#menu').removeClass('active');
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
 </html>

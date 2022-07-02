@@ -164,7 +164,7 @@ const data = [
         ansid:"2"
     },{
         id:"21",
-        question:"Ability to take more than one form is called ......",
+        question:"Ability take more than one form is called ......",
         option1:"Class",
         option2:"Polymorphism",
         option3:"Inheritance",
@@ -211,34 +211,62 @@ const option1 = document.getElementById('option1');
 const option2 = document.getElementById('option2');
 const option3 = document.getElementById('option3');
 const option4 = document.getElementById('option4');
+const ansid = document.getElementById('ansid');
 
-const submit = document.getElementById('submit');
-// const pre = document.getElementById('pre');
-// const next = document.getElementById('next');
+
+const submit = document.querySelector('.submitbtn');
+const submitexambtn = document.querySelector('.submitexambtn')
+// console.log(submitexambtn)
+// console.log(submit)
+
+
+
 
 const popup = document.querySelector(".modalcontainer");
-console.log(screen.width)
+// console.log(screen.width)
 if(screen.width < 600){
-    console.log("yess got it")
+    // console.log("yess got it")
     popup.classList.add("demo");
     popup.classList.remove("modalcontainer");
 
 }else{
-    console.log("no got it")
+    // console.log("no got it")
     popup.classList.add("modalcontainer");
     popup.classList.remove("demo");
 }
 
 
-const input = document.querySelectorAll(".input");
+const input = document.querySelectorAll(".input")
 
-
-let currenttime = 0;
+let mycurrentque = {};
+let currenttime = 0 ;
+// let mycurrentscore= {}
+score = 0;
 window.addEventListener("DOMContentLoaded",()=>{
     showquestion(currenttime);
+
 })
 
+ function disabledbutton(currentpara){
+    console.log("cur value " + currentpara)
+    if(Number.isNaN(currentpara)){
+        currentpara = 0 ;  
+    }
+    let buttoncircle =  document.getElementById(currentpara-1) ;
+     buttoncircle.disabled = true;
+     console.log("dis")
+     console.log(buttoncircle)
+       console.log("button" + buttoncircle)
+       console.log("current id " + currentpara)
+}
+
 function showquestion(currenttime){
+
+    if(mycurrentque.currenttime > 25){
+        mycurrentque.currenttime = 0;
+    } 
+
+//    console.log("question " + currenttime)
     const item = data[currenttime];
     no.textContent = item.id;
     question.textContent = item.question;
@@ -246,61 +274,146 @@ function showquestion(currenttime){
     option2.textContent = item.option2;
     option3.textContent = item.option3;
     option4.textContent = item.option4;
+    ansid.textContent = item.ansid;
+    
+    document.getElementsByTagName("button")[0].tag = item.id;
+    console.log(item.id)
+    mycurrentque.currenttime = item.id;
+    // console.log("question" +currenttime)
+    // console.log(document.getElementsByTagName("button")[0].tag)
+    // random(currenttime)
+    deleselectall();
 }
 
-// next.addEventListener("click",()=>{
-//     currenttime++;
-//     if(currenttime < data.length){
-//         showquestion(currenttime);
-//     }
-//     else{
-//         currenttime = 0;
-//     }
+function fungetidofButton(id){ 
+    showquestion(id)
+}
 
-// });
+    submit.addEventListener("click",()=>{
 
-// pre.addEventListener("click",()=>{
-//     currenttime--;
-//     if(currenttime >= 0){
-//         showquestion(currenttime);
        
-//     }
-//     else{
-//         currenttime = data.length-1;
-//     }
-// });
+        // console.log("button")
+       
+        // console.log(mycurrentque.currenttime > 25)
+        // console.log("after submit" + mycurrentque.currenttime);
+        //  currenttime = 10
+        colorcircle(mycurrentque.currenttime-1);
+        getcheckanswer(mycurrentque.currenttime);
 
-function getcheckanswer(){
+        disabledbutton(mycurrentque.currenttime);
+        // currenttime++;
+        deleselectall();
+    
+        // if(mycurrentque.currenttime >= data.length){
+        //     popup();
+        // }
+        // else{
+            // if(mycurrentque.currenttime > 25){
+            //     mycurrentque.currenttime = 0;
+            // }
+            // console.log("updated " + mycurrentque.currenttime)
+            showquestion(mycurrentque.currenttime);
+        // }
+     });
+
+
+    submitexambtn.addEventListener("click",()=>{
+        const modal = document.querySelector(".modal-overlay");
+        modal.classList.add("open-modal")
+
+        const marks = document.querySelector(".marks");
+        const suggetion = document.querySelector(".suggetion");
+
+        if(window.score == 25){
+            suggetion.textContent = "Excellet score";
+        }else if(window.score >= 10){
+            suggetion.textContent = "good score";
+        }else{
+            suggetion.textContent = "bad score";
+        }
+        marks.textContent = window.score;
+        // console.log(window.score == 0)
+        
+    });
+
+function getcheckanswer(cur){
     let ans ;
+    console.log("Question  :-"+cur)
     input.forEach((current)=>{
-        // console.log(current);
         if(current.checked){
             ans = current.id;
+            // console.log("question " + current)
+            
         }
     })
-    return ans;
+    // console.log("correct ans  " + data[cur-1].ansid)
+    if(ans === data[cur-1].ansid){
+       window.score++ ;
+    //    console.log("your ans  " + ans)
+
+        // console.log("your score  " + window.score)
+     }
+         console.log(cur)
+       
+    
 };
+
+ 
+
+
 const deleselectall =()=>{
     input.forEach((current) => {
         current.checked = false;
     });
 };
 
+// var score=0;
+// function random(currenttime){
+//     submit.addEventListener("click",()=>{
+//         console.log(currenttime);
+//        //  currenttime = 10
+//        console.log("no"+currenttime)
+//        let circle = document.querySelector(".no"+currenttime);
+//        // console.log(circle)
+//        circle.style.background = "rgb(12, 236, 12)";
+//        let checkans = getcheckanswer();
+//        if(checkans === data[currenttime].ansid){
+//           score++;
+//        }
+//     //    currenttime++;
+//        deleselectall();
+//        if(currenttime >= data.length){
+//            const modal = document.querySelector(".modal-overlay");
+//            modal.classList.add("open-modal")
+   
+//            const marks = document.querySelector(".marks");
+//            const suggetion = document.querySelector(".suggetion");
+   
+//            if(score == 25){
+//                suggetion.textContent = "Excellet score";
+//            }else if(score >= 10){
+//                suggetion.textContent = "good score";
+//            }else{
+//                suggetion.textContent = "bad Score";
+//            }
+//            marks.textContent = score;
+//            console.log(score);
+//        }
+//        else{
+//            showquestion(currenttime);
+//        }
+//     });
+// }
 
-var score=0;
- submit.addEventListener("click",()=>{
-    //  console.log(submit);
+function colorcircle(currenttime){
     // console.log("no"+currenttime)
     let circle = document.querySelector(".no"+currenttime);
     // console.log(circle)
     circle.style.background = "rgb(12, 236, 12)";
-    let checkans = getcheckanswer();
-    if(checkans === data[currenttime].ansid){
-       score++;
-    }
-    currenttime++;
-    deleselectall();
-    if(currenttime >= data.length){
+}
+
+function popupfunc(){
+   
         const modal = document.querySelector(".modal-overlay");
         modal.classList.add("open-modal")
 
@@ -315,16 +428,37 @@ var score=0;
             suggetion.textContent = "bad Score";
         }
         marks.textContent = score;
-        console.log(score);
-    }
-    else{
-        showquestion(currenttime);
-    }
- });
+        // console.log(score);
+   
+}
+
+
+function end(){
+    sessionStorage.setItem("score",score);
+   sessionStorage.setItem("total", data.length);
+    // console.log("data array lenght" +v )
+  }
+
+
+//  submit.addEventListener("click",()=>{
+//     console.log(currenttime);
+//     //  currenttime = 10
+//     colorcircle(currenttime);
+//     getcheckanswer();
+//     // currenttime++;
+//     deleselectall();
+
+//     if(currenttime >= data.length){
+//         popup();
+//     }
+//     else{
+//         showquestion(currenttime);
+//     }
+//  });
 
 
 
- var count = 1200;
+ var count = 1220;
  let sec = 60;
 var interval = setInterval(function(){
     let time = Math.trunc(count / 60);
@@ -345,15 +479,15 @@ var interval = setInterval(function(){
         const marks = document.querySelector(".marks");
         const suggetion = document.querySelector(".suggetion");
 
-        if(score == 5){
+        if(mycurrentque.score == 5){
             suggetion.textContent = "Excellet score";
-        }else if(score >= 3){
+        }else if(mycurrentque.score >= 3){
             suggetion.textContent = "good score";
         }else{
             suggetion.textContent = "bad Score";
         }
-        marks.textContent = score;
-        console.log(score);
+        marks.textContent = mycurrentque.score;
+        // console.log(mycurrentque.score);
         clearInterval(interval);
   }
 }, 1000);
